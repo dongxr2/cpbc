@@ -18,7 +18,7 @@ import mca_revision_analysis as rev
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-OUT = PROJECT_ROOT / "output" / "replication" / "v20_legal_path" / "results"
+OUT = PROJECT_ROOT / "output" / "replication" / "legal_path" / "results"
 
 
 def simulate_panel(seed: int, matches: int, games_per_match: int,

@@ -29,7 +29,7 @@ import legal_score_path_cpbc as lp
 import tennis_momentum_advanced as tm
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-RESULTS_ROOT = PROJECT_ROOT / "output" / "replication" / "v20_legal_path" / "results"
+RESULTS_ROOT = PROJECT_ROOT / "output" / "replication" / "legal_path" / "results"
 BASE_SEED = 2026071501
 _BASE = None
 _STARTS = None

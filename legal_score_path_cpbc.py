@@ -33,7 +33,7 @@ if str(ROOT) not in sys.path:
 import mca_revision_analysis as rev
 import tennis_momentum_advanced as tm
 
-OUT = ROOT / "output" / "replication" / "v20_legal_path" / "results"
+OUT = ROOT / "output" / "replication" / "legal_path" / "results"
 OUT.mkdir(parents=True, exist_ok=True)
 SEED = 20260715
 STANDARD_STATES = tuple(
@@ -515,8 +515,8 @@ def run_tour(points: pd.DataFrame, tour: str, B: int = 999, folds: int = 5,
 
 def recompute_holm(results: pd.DataFrame) -> pd.DataFrame:
     old = pd.read_csv(
-        ROOT / "output" / "replication" / "v18_package" / "results"
-        / "revision_v18" / "preferred_eight_test_holm.csv"
+        ROOT / "output" / "replication" / "package" / "results"
+        / "preferred_eight_test_holm.csv"
     )
     local = results.loc[
         results["mode"] == "ordinary_legal_games_tiebreak_excluded",
